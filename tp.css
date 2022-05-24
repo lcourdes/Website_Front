@@ -1,0 +1,273 @@
+/*Définition des polices*/
+
+@font-face {
+    font-family: 'day_romanregular';
+    src: url('tp_images_polices//police_perso//dayroman//dayrom-webfont.eot');
+    src: url('tp_images_polices//police_perso//dayroman//dayrom-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tp_images_polices//police_perso//dayroman//dayrom-webfont.woff') format('woff'),
+         url('tp_images_polices//police_perso//dayroman//dayrom-webfont.ttf') format('truetype'),
+         url('tp_images_polices//police_perso//dayroman//dayrom-webfont.svg#day_romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ballparkweiner';
+    src: url('tp_images_polices//police_perso//ballpark//ballpark-webfont.eot');
+    src: url('tp_images_polices//police_perso//ballpark//ballpark-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tp_images_polices//police_perso//ballpark//ballpark-webfont.woff2') format('woff2'),
+         url('tp_images_polices//police_perso//ballpark//ballpark-webfont.woff') format('woff'),
+         url('tp_images_polices//police_perso//ballpark//ballpark-webfont.ttf') format('truetype'),
+         url('tp_images_polices//police_perso//ballpark//ballpark-webfont.svg#ballparkweiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Eléments principaux*/
+body{
+	background: url("tp_images_polices//images//fond_jaune.png");
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #181818;
+}
+
+#bloc_page{
+	width: 90%;
+	margin: auto;
+}
+
+/*Entête*/
+
+header{
+	background: url("tp_images_polices//images//separateur.png") repeat-x bottom;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 15px;
+}
+
+#main_title{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#main_main{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+header h1{
+	font-family: ballparkweiner, serif;
+	font-weight: normal;
+	margin: 0px 0px 0px 5px;
+	font-size: 2.5em;
+}
+
+header h2{
+	font-family: day_romanregular, serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	margin-top: 0px;
+}
+
+
+nav ul{
+	font-family: day_romanregular,serif;
+	display: flex;
+	list-style: none;
+}
+
+nav ul li{
+	margin: 0px 0px 15px 15px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #181818;
+	font-size: 1.2em;
+}
+
+nav a:hover{
+	color: rgb(159,72,64);
+	text-decoration:underline;
+}
+
+/*Banner*/
+#photo_large{
+	background: url("tp_images_polices//images//sanfrancisco.jpg") no-repeat center;
+	height: 219px;
+	max-width: 950px;
+	margin: auto;
+	border-radius: 0.3em;
+	display:flex;
+	flex-direction: column-reverse;
+	align-items: stretch;
+	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.6);
+}
+
+#sur_photo_large{
+	color: rgb(209,208,206);
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: space-between;
+	height: 47px;
+	align-items: center;
+	border-radius: 0.3em;
+}
+
+#text_sur_photo_large{
+	font-size: 0.8em;
+	opacity: 0.8;
+	margin-left: 5px;
+}
+
+#bouton_sur_photo_large{
+	background: url("tp_images_polices//images//fond_degraderouge.png") repeat;
+	margin-right: 10px;
+	padding: 4px;
+	border-radius: 0.2em;
+}
+
+#bouton_sur_photo_large a{
+	color: rgb(209,208,206);
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 0.9em;
+	align-items: center;
+}
+
+/*Article + Aside*/
+
+section{
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+}
+
+section h1{
+	font-family: day_romanregular, serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+/*Article*/
+
+#article_title{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#article_title img{
+	height: 47px;
+	width: 43px;
+}
+
+#article_title h1{
+	margin-left: 5px;
+}
+
+article p{
+	text-align: justify;
+}
+
+article strong{
+	color:rgb(159,72,64);
+	text-decoration-line: underline;
+}
+
+/*Aside*/
+aside{
+	color: rgb(209,208,206);
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+#fleche img{
+	padding-top: 150px;
+}
+
+#a_propos{
+	background-color: rgb(111,106,99);
+	width: 260px;
+	border-radius: 0.3em;
+	text-align: center;
+	padding: 5px;
+}
+
+#partie_1 img{
+	border: 1px black solid;
+}
+
+#a_propos p{
+	text-align: justify;
+}
+
+#all_logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*Foot*/
+
+footer{
+	background: url("tp_images_polices//images//separateur.png") repeat-x top,
+	url("tp_images_polices//images//ico_top.png") no-repeat top,
+	url("tp_images_polices//images//ombre.png") repeat-x top;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer h2{
+	font-family: day_romanregular, serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.1em;
+}
+
+footer p{
+	font-size: 0.8em;
+}
+
+#My_pictures_for_real ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+#My_pictures_for_real ul li{
+	height: 69px;
+	border: 1px black solid;
+	display: inline-block;
+	margin: 2px;
+}
+
+#List_of_friends{
+	display: flex;
+	justify-content: space-between;
+}
+
+#List_of_friends ul{
+	list-style-image: url("tp_images_polices//images//ico_liensexterne.png");
+	padding: 0px 30px 0px 0px;
+	list-style-position: inside;
+	margin: 0;
+}
+
+#List_of_friends ul a{
+	color: rgb(159,72,64);
+	text-decoration: none;
+	font-size: 0.8em;
+}
